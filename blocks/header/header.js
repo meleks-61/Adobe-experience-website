@@ -189,10 +189,10 @@ let countDown = setInterval(function() {
   let secondsDistance = Math.floor((distance % (1000 * 60)) / 1000);
   
   // days.innerText=daysDistance 
-  days.innerHTML=`<a> ${daysDistance}<a>Days`
-  hours.innerHTML=`<a> ${hoursDistance}<a>Hours`
-  minutes.innerHTML=`<a> ${minutesDistance}<a>Minutes`
-  seconds.innerHTML=`<a> ${secondsDistance}<a>Seconds`
+  days.innerHTML=`<span> ${daysDistance}</span>Days`
+  hours.innerHTML=`<span> ${hoursDistance}</span>Hours`
+  minutes.innerHTML=`<span> ${minutesDistance}</span>Minutes`
+  seconds.innerHTML=`<span> ${secondsDistance}</span>Seconds`
 
 }, 1000);
 

@@ -57,18 +57,11 @@
   margin: auto;
  
  }
-.pictureheader table tbody tr td table{
-  max-width: 950px;
-background-color: yellow;
-  /* min-width: 646px !important;
-  max-height: 700px; */
-  
-  /* gap: 10px; */
+.pictureheader table tbody tr td:nth-child(1) table{
+  max-width: 850px;
+
 }
-.pictureheader table tbody table tbody tr{
-  /* height: 80px; */
-  /* margin-top: 10px; */
-}
+
 .pictureheader table tbody table tbody tr:nth-child(1){
   font-size: 21px;
   font-style: 'FSAlbertBold', sans-serif;
@@ -97,6 +90,7 @@ background-color: yellow;
  .cards {
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
 
 
  }

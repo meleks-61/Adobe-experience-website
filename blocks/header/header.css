@@ -292,24 +292,24 @@ header nav .nav-tools {
 }
 
 .kutu {
-  background: #232B76 0% 0% no-repeat padding-box;
+  background: rgba(35, 43, 118, 0.3);
   color: #FFFF;
   display: flex;
   flex-direction: column;
-  padding: 5px 11px 8px 12px;
-  opacity: 0.3;
+  padding: 10px;
   font-size: 19px;
   font-family: 'FSAlbertRegular', sans-serif;
   justify-content: center;
   align-items: center;
-  max-width: 65px;
+  width: 60px;
   margin-top: 30px;
 
 }
 
-.kutu a {
-  font-size: 19px;
+.kutu span {
+  font-size: 37px;
   font-family: 'FSAlbertBold', sans-serif !important;
   color: #FFFF;
   opacity: 1;
+  text-decoration: none;
 }
