@@ -146,3 +146,58 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 }
+
+let counterdiv= document.createElement('div');
+counterdiv.className = 'counter';
+let parentCounter = document.querySelector('.pictureheader>div')
+parentCounter.append(counterdiv)
+
+let hourdiv= document.createElement('div');
+hourdiv.id = 'hours';
+
+let minutediv= document.createElement('div');
+minutediv.id = 'minutes';
+
+let seconddiv= document.createElement('div');
+seconddiv.id = 'seconds';
+
+let daydiv= document.createElement('div');
+daydiv.id = 'days';
+
+
+
+counterdiv.append(daydiv)
+counterdiv.append(hourdiv)
+counterdiv.append(minutediv)
+counterdiv.append(seconddiv)
+
+
+
+//COUNTDOWN
+let hours=document.getElementById("hours");
+let minutes=document.getElementById("minutes");
+let seconds=document.getElementById("seconds");
+let days=document.getElementById("days")
+
+let countDownDate = new Date("Wednesday, 08 March 2024").getTime();
+let countDown = setInterval(function() {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+  let daysDistance = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hoursDistance = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutesDistance = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let secondsDistance = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // days.innerText=daysDistance 
+  days.innerHTML=`<a> ${daysDistance}<a>Days`
+  hours.innerHTML=`<a> ${hoursDistance}<a>Hours`
+  minutes.innerHTML=`<a> ${minutesDistance}<a>Minutes`
+  seconds.innerHTML=`<a> ${secondsDistance}<a>Seconds`
+
+}, 1000);
+
+hourdiv.className='kutu'
+daydiv.className='kutu'
+minutediv.className='kutu'
+daydiv.className='kutu'
+seconddiv.className='kutu'
